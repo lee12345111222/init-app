@@ -24,6 +24,7 @@
     "git-format-staged": "^2.1.2",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^7.0.0",
+    "lint-staged": ">=10",
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",
     "postcss-loader": "^6.2.1",
@@ -45,5 +46,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "webpack-dev-server": "^4.6.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
